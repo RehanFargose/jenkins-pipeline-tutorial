@@ -132,6 +132,54 @@ pipeline {
 }
 ```
 
+
+
+# Docker
+```
+container name/container id can be used
+image name/image id can be used
+
+docker search ubuntu
+docker pull ubuntu
+docker images
+
+docker run --name containername ubuntu
+docker ps
+docker pause containername
+docker unpause containername
+docker stop containername
+docker ps -a
+docker rm containername
+
+docker run -it ubuntu
+exit
+
+docker inspect ubuntu
+docker history ubuntu
+
+docker commit container_id imagename
+
+docker tag imagename username/nameOfRepository
+docker push username/nameOfRepository
+check if image has been uploaded to your dockerhub
+```
+
+
+
+# DockerFile
+```
+make folder with dockerfile and index.html in it
+open a terminal in this folder
+
+docker build -t imagename . 
+docker run --publish 8888:80 imagename
+
+open browser and go to localhost:8888
+```
+
+
+
+
 # webhook
 ```
 ngrok http 8080

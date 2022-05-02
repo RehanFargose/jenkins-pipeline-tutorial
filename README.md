@@ -60,8 +60,10 @@ java ulala %string1% %string2%
 # batch jenkins
 ### for parameters code
 ```
-echo "Your name is %str1%"
-echo "Your Surname is %str2%"
+Here u must tick on parametrized project and then create 4 parameters given below and their corresponding types
+name,sur=string, city=choice, student=boolean(yes/no)
+echo "Your name is %name%"
+echo "Your Surname is %sur%"
 echo "Your Favorite City is %city%"
 echo "Are you a student %student%"
 ```

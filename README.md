@@ -22,7 +22,7 @@ git merge
 # java jenkins
 ### without parameters
 ```
-make java file with name hello.java:
+make java file with name Simple.java:
 class Simple{  
     public static void main(String args[]){  
      System.out.println("Hello World");  
@@ -31,8 +31,8 @@ class Simple{
 
 build execute windows batch command
 D:
-javac hello.java
-java hello 
+javac Simple.java
+java Simple 
 ```
 ### with parameters
 ```

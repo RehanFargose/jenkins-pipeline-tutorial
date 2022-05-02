@@ -22,6 +22,7 @@ git merge
 # java jenkins
 ### without parameters
 ```
+filename=classname
 make java file with name Simple.java:
 class Simple{  
     public static void main(String args[]){  
@@ -36,9 +37,10 @@ java Simple
 ```
 ### with parameters
 ```
+filename=classname
 make java file for parameters
 This project is parameterized
-parameter name:
+parameter names:
 Name
 Surname
 
@@ -55,8 +57,8 @@ class StringArguments
 build execute windows batch command
 D:
 cd D:\jenkinsviva
-javac Yourfilename.java
-java Yourfilename %Name% %Surname%
+javac StringArguments.java
+java StringArguments %Name% %Surname%
 ```
 
 # batch jenkins

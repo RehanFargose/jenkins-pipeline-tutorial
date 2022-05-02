@@ -137,6 +137,7 @@ FInally update github repo
 # Puppet
 ### Commands to run on puppet Master
 ```
+Step 1: Perform till sudo nano
 sudo apt-get update
 wget https://apt.puppetlabs.com/puppet-release-bionic.deb
 sudo dpkg -i puppet-release-bionic.deb
@@ -150,7 +151,7 @@ sudo ufw allow 8140/tcp
 sudo nano /etc/hosts
 add line here "master-ip puppet"
 
-
+Step 4: Perform these 2 commands to sign these cert req from slave
 Run these two commands at the end(after every slave command is executed)
 sudo puppet cert list
 sudo puppet cert sign --all
@@ -158,6 +159,7 @@ sudo puppet cert sign --all
 
 ### Commands to run on slave node/ puppet agent
 ```
+Step 2: Perform till sudo nano
 sudo apt-get update
 wget https://apt.puppetlabs.com/puppet-release-bionic.deb
 sudo dpkg -i puppet-release-bionic.deb
@@ -165,6 +167,7 @@ sudo apt-get install puppet
 sudo nano /etc/hosts
 add line here "master-ip puppet"
 
+Step 3: Pefrom these 2 commands to send request to master
 sudo systemctl start puppet
 sudo systemctl enable puppet
 sudo puppet agent --test

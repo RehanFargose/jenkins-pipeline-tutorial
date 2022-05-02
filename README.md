@@ -22,12 +22,17 @@ git merge
 # java jenkins
 ### without parameters
 ```
-make java file
+make java file with name hello.java:
+class Simple{  
+    public static void main(String args[]){  
+     System.out.println("Hello World");  
+    }  
+}  
+
 build execute windows batch command
 D:
-cd D:\joBhiHai
-javac ulala.java
-java ulala 
+javac hello.java
+java hello 
 ```
 ### with parameters
 ```

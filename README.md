@@ -38,9 +38,11 @@ java Simple
 ```
 make java file for parameters
 This project is parameterized
-string1
-string2
+parameter name:
+Name
+Surname
 
+code:
 class StringArguments
 {
     public static void main(String args[])
@@ -52,9 +54,9 @@ class StringArguments
 
 build execute windows batch command
 D:
-cd D:\joBhiHai
-javac ulala.java
-java ulala %string1% %string2%
+cd D:\jenkinsviva
+javac Yourfilename.java
+java Yourfilename %Name% %Surname%
 ```
 
 # batch jenkins

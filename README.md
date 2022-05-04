@@ -1,21 +1,64 @@
 # 20 commands of linux
 ```
-compgen -c
+compgen -c  (gives list of cmds, not neccesary)
+ifconfig
+mkdir hi
+ls
+cd hi
+pwd
+nano hi.txt
+touch test.txt
+echo "hello" > file3.txt
+cp hi.txt file6.txt
+mv hi.txt file7.txt
+df
+du
+rm file6.txt
+mkdir bye
+rmdir bye
+man pwd
+pwd --help
+uname
+sudo apt-get update
 ```
 
 # git fetch push pull merge
 ```
-git init
-git clone url
-cd 
-git remote add origin url
 git config --global user.name "your_username"
 git config --global user.email "your_email_address@example.com"
-git pull
-git push
-git fetch 
+git init
+
+##create doc file in local drive
+git add .
 git status
-git merge
+git commit - m "comment"
+git push
+git remote add origin url
+git push --set-upstream origin master
+
+##change to master branch in git hub repo and check if file is added
+## add a new file 
+git fetch
+git merge 
+
+## make another file 
+git pull
+git log
+
+##to create a new branch
+git -b anybranchname
+git checkout abovebranchname
+git remote -v
+git branch -vv
+git ls -files
+
+## to restore modified file, modify content of a file in local
+git status
+git restore filename
+git status
+
+git clone url
+cd
 ```
 
 
@@ -35,6 +78,7 @@ D:
 javac Simple.java
 java Simple 
 ```
+
 ### with parameters
 ```
 filename=classname

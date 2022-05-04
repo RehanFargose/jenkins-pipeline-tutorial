@@ -22,6 +22,51 @@ uname
 sudo apt-get update
 ```
 
+# Git push-pull, fetch-merge 
+```
+#1st create a folder on local drive 
+git config --global user.name "RehanFargose"
+git config --global user.email "rehanfargose@gmail.com"
+git init
+
+#Step 2 create a new repo on Github with readme
+# clone/download online repo to local machine
+git clone https://github.com/RehanFargose/DOLviva.git
+
+# Go into repo folder
+cd DOLviva
+
+#Create sample1.txt on online repo
+#Git pull will then download this file
+git pull
+
+# create hello.docx on local folder
+git status
+
+#git add register hello.docx with git
+git add hello.docx
+
+git status
+
+# Commit changes from local to online repo
+git commit -m "adding hello.docx to Github"
+
+# upload hello.docx to online repo
+git push
+
+#create sample2.txt for fetch and merge operations
+git status
+
+# compares online and local repo
+git fetch
+
+git status
+# git merge updates both to come on latest level
+git merge
+
+```
+
+
 # git fetch push pull merge
 ```
 git config --global user.name "your_username"

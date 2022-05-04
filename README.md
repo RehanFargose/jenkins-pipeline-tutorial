@@ -142,14 +142,20 @@ image name/image id can be used
 docker search ubuntu
 docker pull ubuntu
 docker images
+docker images -q
 
-docker run --name containername ubuntu
+docker run -t -d ubuntu
 docker ps
 docker pause containername
 docker unpause containername
 docker stop containername
+docker run --name containername hello
+docker kill ubuntu
 docker ps -a
 docker rm containername
+docker rmi imagename
+
+docker stats
 
 docker run -it ubuntu
 exit
@@ -162,6 +168,8 @@ docker commit container_id imagename
 docker tag imagename username/nameOfRepository
 docker push username/nameOfRepository
 check if image has been uploaded to your dockerhub
+
+docker container prune
 ```
 
 
@@ -196,6 +204,36 @@ FInally update github repo
 ```
 
 # Puppet
+### Creating instances
+```
+Ubuntu 18.04 Free tier
+number of instances : 2
+Configure security Group : Type - All TCP, Source - Anywhere
+Create new key pair
+name it
+download key pair
+```
+
+
+### Generating PPK file
+```
+open putty gen
+load
+select pem file
+save private key
+```
+
+
+### Connecting Via putty
+```
++ssh
+go to auth
+select ppk file
+session - add ip
+open
+```
+
+
 ### Commands to run on puppet Master
 ```
 Step 1: Perform till sudo nano
